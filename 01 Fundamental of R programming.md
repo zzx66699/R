@@ -23,6 +23,64 @@ Second, data frames can include many different types of data, like numeric, logi
 Finally, elements in the same column should be of the same type.  
 
 ### 4.4 files
+#### 4.4.1 Use the dir.create function to create a new folder, or directory, to hold your files. 
+
+Place the name of the folder in the parentheses of the function. 
+
+```
+dir.create ("destination_folder")
+```
+
+#### 4.4.2 Use the file.create() function to create a blank file. 
+Place the name and the type of the file in the parentheses of the function. Your file types will usually be something like .txt, .docx, or .csv.  
+
+```
+file.create (“new_text_file.txt”) 
+
+file.create (“new_word_file.docx”) 
+
+file.create (“new_csv_file.csv”) 
+```
+
+If the file is successfully created when you run the function, R will return a value of TRUE (if not, R will return FALSE). 
+
+```
+file.create (“new_csv_file.csv”)
+
+[1] TRUE 
+```
+
+#### 4.4.3 Copying a file can be done using the file.copy() function. 
+In the parentheses, add the name of the file to be copied.   
+Then, type a comma, and add the name of the destination folder that you want to copy the file to.   
+
+```
+file.copy (“new_text_file.txt” , “destination_folder”)
+```
+
+#### 4.4.4 You can delete R files using the unlink() function. 
+Enter the file’s name in the parentheses of the function.
+
+```
+unlink (“some_.file.csv”)
+```
+
+### 4.5 Matrices 
+A matrix is a two-dimensional collection of data elements  
+matrices can only contain a single data type. For example, you can’t have both logicals and numerics in a matrix.   
+
+```
+> matrix(c(3:8), nrow = 2)  
+     [,1] [,2] [,3]
+[1,]    3    5    7
+[2,]    4    6    8
+
+> matrix(c(3:8), ncol = 2)  
+     [,1] [,2]
+[1,]    3    6
+[2,]    4    7
+[3,]    5    8
+```
 
 ## 05 Pipe
 A tool in R for expressing a sequence of multiple operations, represented with "%>%"
