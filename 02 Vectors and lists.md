@@ -1,4 +1,4 @@
-# Chapter2 Vector
+# Chapter2 Vectors and lists
 ## 1. Atomic vectors  
 atomic vector can only contain elements of the same type  
 
