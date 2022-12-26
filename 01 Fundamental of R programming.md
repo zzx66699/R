@@ -18,6 +18,9 @@ You cannot have a vector that contains both logicals and numerics.
 ### 4.2 list
 
 ### 4.3 Data frames
+First, columns should be named.  
+Second, data frames can include many different types of data, like numeric, logical, or character.  
+Finally, elements in the same column should be of the same type.  
 
 ### 4.4 files
 
