@@ -88,3 +88,11 @@ A tool in R for expressing a sequence of multiple operations, represented with "
 ``` R
 ToothGrowth %>% filter(dose==0.5) %>% arrange(len)
 ```
+
+## 6. create R script
+<img width="259" alt="image" src="https://user-images.githubusercontent.com/105503216/209664571-0ea24115-ae48-4f1c-bea2-12885d4f72a1.png"><img width="293" alt="image" src="https://user-images.githubusercontent.com/105503216/209664647-84495c91-5dfc-4f20-a6ff-54893375351d.png">
+<img width="280" alt="image" src="https://user-images.githubusercontent.com/105503216/209664683-46e3c746-b53f-499b-ac68-32acbf5e0150.png">
+
+## 7. and & or
+and: &
+or: | 
