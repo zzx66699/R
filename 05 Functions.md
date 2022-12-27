@@ -16,7 +16,8 @@ if (condition1) {
 x <- 1
 if (x == 2) {
   print('good')
-} else {print('bad')
+} else {
+  print('bad')
 }
 [1] "bad"
 ```
