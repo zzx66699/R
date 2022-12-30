@@ -114,3 +114,10 @@ A closing curly brace should always go on its own line (unless it’s followed b
 <img width="481" alt="image" src="https://user-images.githubusercontent.com/105503216/209667722-ccef20a3-3d02-444e-9454-b3e8ba0d2df9.png">  
 
 When indenting your code, use two spaces. Do not use tabs or mix tabs and spaces.
+
+## 9. Packages
+### 9.1 Check the packages you install
+
+```
+installed.packages()
+```
