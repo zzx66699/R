@@ -132,6 +132,16 @@ library(askpass)
 
 <img width="438" alt="image" src="https://user-images.githubusercontent.com/105503216/210084424-cb0b22dc-56e4-42e7-b296-c459a869aa6d.png">
 
-### 9.3 lift of packages
+### 9.3 list of packages
 https://cran.r-project.org/web/views/
+
+### 9.4 update
+
+``` R
+# update all packages  
+update.packages()
+
+# only update a certain package
+install.packages('xx')
+```
 
