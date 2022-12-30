@@ -121,3 +121,17 @@ When indenting your code, use two spaces. Do not use tabs or mix tabs and spaces
 ```
 installed.packages()
 ```
+
+### 9.2 load installed package
+package with check means the package is loaded  
+<img width="362" alt="image" src="https://user-images.githubusercontent.com/105503216/210084305-832517ee-51de-448b-bc14-4900110f2aa9.png">  
+
+```
+library(askpass)
+```
+
+<img width="438" alt="image" src="https://user-images.githubusercontent.com/105503216/210084424-cb0b22dc-56e4-42e7-b296-c459a869aa6d.png">
+
+### 9.3 lift of packages
+https://cran.r-project.org/web/views/
+
