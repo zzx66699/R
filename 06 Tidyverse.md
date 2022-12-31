@@ -9,4 +9,19 @@ library(tidyverse)
 ## 1. 8 core packages
 ggplot2, tibble, tidyr, readr, purrr, dplyr, stringr, forcats  
 
-## 2. ggplot
+## 2. dplyr
+### 2.1 filter
+
+``` R
+library(dplyr)
+filtered_data <- filter(ToothGrowth, dose==0.5)
+View(filtered_data)
+```
+<img width="230" alt="image" src="https://user-images.githubusercontent.com/105503216/210123133-70d36ed7-21c6-4997-a63d-eda917acfdc8.png">
+
+### 2.2 arrange 排序sort
+
+``` R
+# arrange(排序的data名, 按照排序的列）
+arrange(filtered_data, len)
+```
