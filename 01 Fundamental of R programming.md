@@ -19,6 +19,7 @@ A tool in R for expressing a sequence of multiple operations, represented with "
 ToothGrowth %>% filter(dose==0.5) %>% arrange(len)
 ```
 
+
 ## 4. Data structure 
 a data structure is a format for organizing and storing data  
 
@@ -144,4 +145,14 @@ update.packages()
 # only update a certain package
 install.packages('xx')
 ```
+
+### 9.5 use installed data package
+
+``` R
+data('ToothGrowth')
+View(ToothGrowth)
+```
+<img width="233" alt="image" src="https://user-images.githubusercontent.com/105503216/210123018-9979e64d-75c3-4056-8c21-2a1ebc143736.png">  
+
+
 
