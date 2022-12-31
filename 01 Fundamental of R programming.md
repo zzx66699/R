@@ -12,6 +12,27 @@ A representation of a value in R that can be stored for use later during program
 ### 2.3 Function
 A body of reusable code for performing specific tasks in R  
 
+### 2.4 Operator
+operator is a symbol that identifies the type of operation or calculation to be performed in a formula.  
+
+#### 2.4.1 Arithmetic operators
+<img width="810" alt="image" src="https://user-images.githubusercontent.com/105503216/210130836-bac9defa-0fd9-4303-8438-087e0b1fc01f.png">
+
+#### 2.4.2 Relational operators
+<img width="805" alt="image" src="https://user-images.githubusercontent.com/105503216/210130989-8a341b01-1bc6-4e93-b221-1a240ad51841.png">
+
+#### 2.4.3 Logical operators
+<img width="806" alt="image" src="https://user-images.githubusercontent.com/105503216/210131011-c3873074-01a7-4fd1-8d08-9f583ada067c.png">  
+
+The main difference between element-wise logical operators (&, |) and logical operators (&&, ||) is the way they apply to operations with vectors.  
+<img width="175" alt="image" src="https://user-images.githubusercontent.com/105503216/210131078-58a07e3a-076c-420f-ba0b-e5e4f62b6979.png">   
+<img width="833" alt="image" src="https://user-images.githubusercontent.com/105503216/210131082-bdc5b931-1074-49ed-b57e-62fc5c290921.png">  
+<img width="838" alt="image" src="https://user-images.githubusercontent.com/105503216/210131094-4a93b26e-65d3-4271-a750-801dcacc6966.png">
+
+
+
+#### 2.4.4 
+
 ## 3. Pipe
 A tool in R for expressing a sequence of multiple operations, represented with "%>%"   
 shortcut: cmd + shift + m  
