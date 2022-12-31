@@ -13,10 +13,23 @@ A representation of a value in R that can be stored for use later during program
 A body of reusable code for performing specific tasks in R  
 
 ## 3. Pipe
-A tool in R for expressing a sequence of multiple operations, represented with "%>%"
+A tool in R for expressing a sequence of multiple operations, represented with "%>%"   
+shortcut: cmd + shift + m  
 
-``` R
-ToothGrowth %>% filter(dose==0.5) %>% arrange(len)
+``` R 
+result <- ToothGrowth %>% 
+  filter(dose==0.5) %>% 
+  arrange(len)
+
+View(result)
+```
+
+### 3.1 nested function
+nested: code is contained within code that performs a broader function   
+nested function: a function that is completely contained within another function  
+
+```
+arrange(filter(ToothGrowth, dose==5),len)
 ```
 
 
