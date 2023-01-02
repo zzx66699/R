@@ -189,5 +189,13 @@ View(ToothGrowth)
 ```
 <img width="233" alt="image" src="https://user-images.githubusercontent.com/105503216/210123018-9979e64d-75c3-4056-8c21-2a1ebc143736.png">  
 
+## 10. read the file  
+- read_csv(): comma-separated values (.csv) files
+- read_tsv(): tab-separated values files
+- read_delim(): general delimited files
+- read_fwf(): fixed-width files
+- read_table(): tabular files where columns are separated by white-space
+- read_log(): web log files
+- read_excel(): excel
 
 
