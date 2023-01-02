@@ -97,6 +97,59 @@ library(janitor)
 clean_names(penguins)
 ```
 
+### 4.4 arrange: sort the dataset by xx column
+
+```
+# arrange(排序的data名, 按照排序的列）
+
+penguins %>% 
+  arrange(bill_length_mm)
+```
+<img width="671" alt="image" src="https://user-images.githubusercontent.com/105503216/210213040-8fcc7309-b3d9-4112-b5ed-b262e24e114e.png">  
+
+descending order
+
+```
+penguins2 <- arrange(penguins, -bill_length_mm)
+View(penguins)
+```
+<img width="669" alt="image" src="https://user-images.githubusercontent.com/105503216/210213254-51c20d14-f7ee-4f2b-994b-dd4b5d6d2e49.png">
+
+### 4.5 group_by & summarize
+#### 4.5.1 mean
+
+```
+result <- ToothGrowth %>% 
+  filter(dose==0.5) %>% 
+  group_by(supp) %>% 
+  summarize(mean_len = mean(len))
+
+View(result)
+```
+
+<img width="228" alt="image" src="https://user-images.githubusercontent.com/105503216/210123567-10c68d8e-af04-4665-a879-237579017ec9.png">  
+
+#### 4.5.2 max
+
+```
+penguins %>% 
+  group_by(island) %>% 
+  drop_na() %>% 
+  summarize(max_bill_length = max(bill_length_mm))
+```
+
+<img width="227" alt="image" src="https://user-images.githubusercontent.com/105503216/210213875-8d087798-c44f-4cf5-93a3-ad856dfcbb7c.png">
+
+#### 4.5.2 groupby xx, xx / calculate xx, xx
+
+```
+penguins %>% 
+  group_by(island, species) %>% 
+  drop_na() %>% 
+  summarize(max_bill_length = max(bill_length_mm), mean_bill_length = mean(bill_length_mm))
+```
+<img width="408" alt="image" src="https://user-images.githubusercontent.com/105503216/210214095-61b94438-c83e-4566-a36e-df8d96ad59b4.png">
+
 
 ## 5. Extract the data frame
 ### 5.1 select
@@ -114,3 +167,11 @@ penguins %>%
 
 <img width="633" alt="image" src="https://user-images.githubusercontent.com/105503216/210129774-f600c4d6-4f01-4d36-bd5e-e9b57a9b4b88.png">
 
+### 5.2 filter
+
+``` R
+library(dplyr)
+filtered_data <- filter(ToothGrowth, dose==0.5)
+View(filtered_data)
+```
+<img width="230" alt="image" src="https://user-images.githubusercontent.com/105503216/210123133-70d36ed7-21c6-4997-a63d-eda917acfdc8.png">
