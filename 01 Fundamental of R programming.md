@@ -30,8 +30,9 @@ The main difference between element-wise logical operators (&, |) and logical op
 <img width="838" alt="image" src="https://user-images.githubusercontent.com/105503216/210131094-4a93b26e-65d3-4271-a750-801dcacc6966.png">
 
 
+#### 2.4.4 Assignment operators
+<img width="796" alt="image" src="https://user-images.githubusercontent.com/105503216/210212646-f9beaf77-d597-4407-9ac1-6e1b8f7ad20a.png">
 
-#### 2.4.4 
 
 ## 3. Pipe
 A tool in R for expressing a sequence of multiple operations, represented with "%>%"   
