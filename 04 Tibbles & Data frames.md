@@ -104,6 +104,18 @@ penguins %>%
 ```
 <img width="685" alt="image" src="https://user-images.githubusercontent.com/105503216/210130339-7bc4f3d6-e612-4d56-aca9-59319e32ee61.png">
 
+### 3.6 bias
+quantify bias by comparing the actual outcome of our data with the predicted outcome  
+bias function finds the average amount that the actual outcome is greater than the predicted outcome  
+If the model is unbiased, the outcome should be pretty close to zero  
+
+```
+install.packages('SimDesign')
+library(SimDesign)
+```
+<img width="480" alt="image" src="https://user-images.githubusercontent.com/105503216/210241555-32dbf578-f09f-4cfa-a83d-e545ce7bc244.png">
+
+
 ## 4. Organize functions: sort, filter, and summarize data 
 ### 4.1 select
 
@@ -129,6 +141,19 @@ View(filtered_data)
 ```
 <img width="230" alt="image" src="https://user-images.githubusercontent.com/105503216/210123133-70d36ed7-21c6-4997-a63d-eda917acfdc8.png">
 
+### 4.3 $
+
+```
+hotel_bookings$lead_time
+```
+<img width="699" alt="image" src="https://user-images.githubusercontent.com/105503216/210242475-890b941d-76c9-4678-a585-9b38dacbf896.png">
+
+#### 4.3.4 mean/ min/ max/ 
+
+```
+mean(hotel_bookings$lead_time)
+```
+<img width="72" alt="image" src="https://user-images.githubusercontent.com/105503216/210242736-1b3de903-7374-4420-9388-1998577fa576.png">
 
 ### 4.4 arrange: sort the dataset by xx column
 
@@ -191,8 +216,10 @@ penguins %>%
 ```
 <img width="408" alt="image" src="https://user-images.githubusercontent.com/105503216/210214095-61b94438-c83e-4566-a36e-df8d96ad59b4.png">
 
-
-
+### 4.6 Wide data & long data
+<img width="782" alt="image" src="https://user-images.githubusercontent.com/105503216/210237437-ff5d1c57-0c8b-4977-b553-70ff15320a9f.png">  
+<img width="788" alt="image" src="https://user-images.githubusercontent.com/105503216/210237555-53b1318c-c32d-4a2d-8569-ae608b908386.png">  
+pivot_wider() & pivot_longer() 
 
 ## 5. Transfrom functions: separate and combine data, as well as create new variables
 ### 5.1 mutate: increase a new column 
@@ -226,10 +253,6 @@ example_df
 
 
 
-## 6. Wide data & long data
-<img width="782" alt="image" src="https://user-images.githubusercontent.com/105503216/210237437-ff5d1c57-0c8b-4977-b553-70ff15320a9f.png">  
-<img width="788" alt="image" src="https://user-images.githubusercontent.com/105503216/210237555-53b1318c-c32d-4a2d-8569-ae608b908386.png">  
-pivot_wider() & pivot_longer()  
 
 
 
