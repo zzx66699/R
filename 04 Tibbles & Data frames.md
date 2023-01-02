@@ -1,4 +1,11 @@
 # Chapter4 Tibbles & Data frames 
+`tidyverse` is a system of packages in R with a common design philosophy for data manipulation, exploration, and visualization   
+
+8 core packages of `tidyverse` are:    
+ggplot2, tibble, tidyr, readr, purrr, dplyr, stringr, forcats  
+
+we use `dplyr` a lot here
+
 ## 1. Data frames
 a collection of columns  
 - column name should be named    
@@ -64,30 +71,26 @@ colnames(diamonds)
 
 
 ## 4. Make change to the data frame
-### 4.1 mutate: increase a new column
+### 4.1 mutate: increase a new column with other original columns
 ```
 library(dplyr)
-mutate(diamonds, carat_2 = 100*carat)
+diamonds1 <- mutate(diamonds, carat_2 = 100*carat)
+View(diamonds1)
 ```
 <img width="591" alt="image" src="https://user-images.githubusercontent.com/105503216/210127743-ac9130fc-e64e-4162-ac74-4b4b3a676760.png">
 
-### 4.2 rename & rename_with
-change island to island_new
+### 4.2 unite: combine data in different columns without other columns
 
 ```
-penguins %>% 
-  rename(island_new = island)
-```
+# unite(列名, c(combine的列xx, combine的列xx), sep = 'xx')
 
-<img width="687" alt="image" src="https://user-images.githubusercontent.com/105503216/210129828-b90237cb-6707-4a43-9916-f0e0e53e7adf.png">
-
-change all column name to upper/lower
-
+example_df <- hotel_bookings %>%
+  select(arrival_date_year, arrival_date_month) %>% 
+  unite(arrival_month_year, c("arrival_date_month", "arrival_date_year"), sep = " ")
+example_df
 ```
-penguins %>% 
-  rename_with(toupper)
-```
-<img width="685" alt="image" src="https://user-images.githubusercontent.com/105503216/210130339-7bc4f3d6-e612-4d56-aca9-59319e32ee61.png">
+<img width="156" alt="image" src="https://user-images.githubusercontent.com/105503216/210215979-d7569424-cf75-4470-b228-986db5efa8a6.png">
+
 
 ### 4.3 clean_names
 This ensures that there's only characters, numbers, and underscores in the names 
@@ -140,7 +143,7 @@ penguins %>%
 
 <img width="227" alt="image" src="https://user-images.githubusercontent.com/105503216/210213875-8d087798-c44f-4cf5-93a3-ad856dfcbb7c.png">
 
-#### 4.5.2 groupby xx, xx / calculate xx, xx
+#### 4.5.3 groupby multiple columns or calculate several results
 
 ```
 penguins %>% 
@@ -149,6 +152,35 @@ penguins %>%
   summarize(max_bill_length = max(bill_length_mm), mean_bill_length = mean(bill_length_mm))
 ```
 <img width="408" alt="image" src="https://user-images.githubusercontent.com/105503216/210214095-61b94438-c83e-4566-a36e-df8d96ad59b4.png">
+
+#### 4.5.4 summarize without groupby
+Make a column called 'total_canceled' to represent the total number of canceled bookings
+
+```
+> df <- hotel_bookings %>% 
++ summarize(total_canceled = sum(is_canceled))
+> df
+```
+
+<img width="139" alt="image" src="https://user-images.githubusercontent.com/105503216/210217083-679d3dd4-3246-4bc1-822f-c680485b88cd.png">
+
+### 4.6 rename & rename_with
+change island to island_new (this will return a new dataset, not change the original one)
+
+```
+penguins %>% 
+  rename(island_new = island)
+```
+
+<img width="687" alt="image" src="https://user-images.githubusercontent.com/105503216/210129828-b90237cb-6707-4a43-9916-f0e0e53e7adf.png">
+
+#### 4.6.1 change all column name to upper/lower
+
+```
+penguins %>% 
+  rename_with(toupper)
+```
+<img width="685" alt="image" src="https://user-images.githubusercontent.com/105503216/210130339-7bc4f3d6-e612-4d56-aca9-59319e32ee61.png">
 
 
 ## 5. Extract the data frame
