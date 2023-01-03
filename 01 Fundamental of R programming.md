@@ -147,7 +147,7 @@ or: |
 <img width="479" alt="image" src="https://user-images.githubusercontent.com/105503216/209667402-79db7b0a-9092-431c-afa2-347a5a408124.png">  
 
 - An opening curly brace should never go on its own line and should always be followed by a new line.   
-A closing curly brace should always go on its own line (unless it’s followed by an else statement). Always indent the code inside curly braces.  
+- A closing curly brace should always go on its own line (unless it’s followed by an else statement). Always indent the code inside curly braces.  
 <img width="481" alt="image" src="https://user-images.githubusercontent.com/105503216/209667722-ccef20a3-3d02-444e-9454-b3e8ba0d2df9.png">  
 
 - When indenting your code, use two spaces. Do not use tabs or mix tabs and spaces.
