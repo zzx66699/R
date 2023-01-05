@@ -102,4 +102,39 @@ ggplot(penguins) +
 ```
 <img width="502" alt="image" src="https://user-images.githubusercontent.com/105503216/210739326-6119c319-81e0-4cc7-8b01-8e7c802c34c5.png">
 
+## 4. facet
 ```
+ggplot(penguins) + 
+  geom_point(mapping = aes(x=bill_length_mm, y=flipper_length_mm, color=species)) +
+  facet_wrap(~species)
+```
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/105503216/210740965-772277c7-8fc8-4d0c-8acb-69771d28467f.png">
+
+```
+ggplot(diamonds) + 
+  geom_bar(mapping = aes(x=color, fill=cut)) +
+  facet_wrap(~cut)
+```
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/105503216/210741876-5f52e214-9a55-4af1-9ced-5a80ff90ccb5.png">
+
+### 4.1 facet_grid
+To facet your plot with two variables, use the facet underscore grid function.   
+Facet underscore grid will split the plot into facets vertically by the values of the first variable and horizontally by the values of the second variable.  
+
+```
+ggplot(penguins) + 
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species)) +
+  facet_wrap(sex~species)
+```
+<img width="496" alt="image" src="https://user-images.githubusercontent.com/105503216/210742369-02828158-72c7-46a6-8375-cd08aabe85d9.png">
+
+## 5. label & annotate
+### 5.1 labs
+```
+ggplot(data = hotel_bookings) +
+  geom_bar(mapping = aes(x = distribution_channel)) +
+  labs(title='Bookings: from distribution channels', subtitle='Sample of 5 channels', caption='made by zzx')     
+```
+<img width="497" alt="image" src="https://user-images.githubusercontent.com/105503216/210751880-0af8bccd-18d7-4cdd-ba00-9c7dc4bfb25f.png">
+
+### 5.1 labs
