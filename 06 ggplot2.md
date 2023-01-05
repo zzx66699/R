@@ -137,4 +137,22 @@ ggplot(data = hotel_bookings) +
 ```
 <img width="497" alt="image" src="https://user-images.githubusercontent.com/105503216/210751880-0af8bccd-18d7-4cdd-ba00-9c7dc4bfb25f.png">
 
-### 5.1 labs
+### 5.1 annotate
+```
+ggplot(penguins) + 
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species)) +
+  annotate('text', x=210, y=3000, label='positive relationship', 
+           color='red', fontface='bold', size=4.5, angle=25)
+```
+<img width="499" alt="image" src="https://user-images.githubusercontent.com/105503216/210777273-2bcff71b-03f0-4f9a-b2f2-11efeed74abe.png">
+
+## 6. save your visualization
+### 6.1 export option
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/105503216/210777607-bd24e893-1905-4eee-b72b-ce31c11e8d59.png">
+
+### 6.2 ggsave
+```
+# save the last vis
+ggsave('Penguins.png')
+```
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/105503216/210778761-aa424bce-d667-47ab-8c42-725f9d885d91.png">
