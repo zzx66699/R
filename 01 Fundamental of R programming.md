@@ -198,4 +198,6 @@ View(ToothGrowth)
 - read_log(): web log files
 - read_excel(): excel
 
+## 11. R markdown
+A file format for making dynamic documents with R  
 
