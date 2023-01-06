@@ -199,5 +199,16 @@ View(ToothGrowth)
 - read_excel(): excel
 
 ## 11. R markdown
-A file format for making dynamic documents with R  
+A file format for making dynamic documents with R    
+use command+option+i to create code chunk   
+
+```
+installed.packages('rmarkdown')
+```
+<img width="448" alt="image" src="https://user-images.githubusercontent.com/105503216/211032892-5aeeba96-8fff-49fd-abd8-551d1fd4033c.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/105503216/211032723-ef2c8dc1-0882-41e1-a473-75c5a125b82c.png">    
+
+
+Use 'knit' to get a HTML report    
+<img width="1113" alt="image" src="https://user-images.githubusercontent.com/105503216/211033534-5e3f56f7-4379-4df5-9b8c-9e8bd172530f.png">   
 
