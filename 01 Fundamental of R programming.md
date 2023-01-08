@@ -200,7 +200,7 @@ View(ToothGrowth)
 
 ## 11. R markdown
 A file format for making dynamic documents with R    
-use command+option+i to create code chunk   
+Markdown is a syntax for formatting plain text files  
 
 ```
 installed.packages('rmarkdown')
@@ -208,7 +208,51 @@ installed.packages('rmarkdown')
 <img width="448" alt="image" src="https://user-images.githubusercontent.com/105503216/211032892-5aeeba96-8fff-49fd-abd8-551d1fd4033c.png">
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/105503216/211032723-ef2c8dc1-0882-41e1-a473-75c5a125b82c.png">    
 
+we can easily find each section by the content menu  
+<img width="214" alt="image" src="https://user-images.githubusercontent.com/105503216/211179240-f20fa88b-3eca-4bc2-b3ce-24d0e2782a75.png">
 
+### 11.1 YAML(header section)
+a language for data that translates it so it's readable   
+<img width="394" alt="image" src="https://user-images.githubusercontent.com/105503216/211178450-cf882d54-a323-42cd-aae7-f0f57e84d543.png">
+
+### 11.2 Clickable link 
+the link is formatted using angle brackets  
+<img width="470" alt="image" src="https://user-images.githubusercontent.com/105503216/211178640-b13b7fa0-0e89-4de1-a810-04dccd84cd93.png">  
+
+embed the link  
+add the caption in square bracket and copy the link in parenthesis  
+<img width="609" alt="image" src="https://user-images.githubusercontent.com/105503216/211178944-179a358d-ba3d-43cd-9303-eaa0bd4a9170.png">  
+<img width="252" alt="image" src="https://user-images.githubusercontent.com/105503216/211178932-61a21def-89fc-4133-b684-6c25475d1378.png">
+
+
+### 11.3 Bullet
+we use asterisk   
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/105503216/211178818-14c608cb-a719-44b1-b78a-9584614b3742.png">
+
+### 11.4 Image
+- add exclamation point and a caption for the image in square bracket  
+- copy the URL and insert it in parenthesis   
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/105503216/211179029-2f4bbbff-5f87-4b1c-9cee-edc4c6aef42e.png">
+
+### 11.5 Code chunk
+delimiter: a character that indicates the beginning or end of a data item  
+shortcut: command + option + i   
+
+change the code chunk options  
+<img width="339" alt="image" src="https://user-images.githubusercontent.com/105503216/211179270-95a262ac-063c-4f87-92ca-bc182e240034.png">
+
+### 11.6 Export the documentation  
 Use 'knit' to get a HTML report    
-<img width="1113" alt="image" src="https://user-images.githubusercontent.com/105503216/211033534-5e3f56f7-4379-4df5-9b8c-9e8bd172530f.png">   
+<img width="228" alt="image" src="https://user-images.githubusercontent.com/105503216/211179422-a363f30a-46db-4e0d-8f91-9fa0b233a64c.png">
+<img width="1113" alt="image" src="https://user-images.githubusercontent.com/105503216/211033534-5e3f56f7-4379-4df5-9b8c-9e8bd172530f.png">     
 
+Use export to download them  
+<img width="502" alt="image" src="https://user-images.githubusercontent.com/105503216/211179586-98428a1a-a033-4186-b941-e3fd7e19fd08.png">
+
+#### 11.6.1 other format
+In addition to the default HTML output (html_document), you can create other types of documents in R Markdown using the following output settings:   
+<img width="770" alt="image" src="https://user-images.githubusercontent.com/105503216/211179516-26f3e906-31c3-453f-89a7-e9cc626afcea.png">  
+<img width="757" alt="image" src="https://user-images.githubusercontent.com/105503216/211179535-a3a51fec-7b65-451e-bf46-82a487e0a1a5.png">
+
+change the output in YAML   
+<img width="211" alt="image" src="https://user-images.githubusercontent.com/105503216/211179506-ff0391d4-2821-475c-8c64-66d166034f2b.png">  
